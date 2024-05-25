@@ -1,10 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Topic Forum</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="logo.png"
+        height="68px"
+        width="68px"
+        alt="Today I learned logo..."
+      />
+      <h1>Today I learned...</h1>
+    </header>
+    <form>
+      <label>
+        <input type="text" placeholder="Share a fact with the world..." />
+      </label>
+      <label>
+        <input type="text" placeholder="Trustworthy source..."/>
+      </label>
+      <label>
+        <select>
+          <option value="">Choose category</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+        </select>
+      </label>
+      <button>Post</button>
+    </form>
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <button>All</button>
+          </li>
+          <li>
+            <button>Technology</button>
+          </li>
+          <li>
+            <button>Science</button>
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <ul>
+          <li>
+            "React is being developed by Meta (formerly facebook)"
+            <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
+            <span>#technology#</span>
+          </li>
+          <li>
+            <p>
+              "Millennial dads spend 3 times as much time with their kids than
+              their fathers spent with them. In 1982, 43% of fathers had never
+              changed a diaper. Today, that number is down to 3%."
+              <a
+                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                target="_blank"
+                >(Source)</a
+              >
+              <span>#society#</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
