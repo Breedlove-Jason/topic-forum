@@ -49,8 +49,8 @@ h1 {
   display: flex;
 }
 
-.category{
-    margin-bottom: 16px;
+.category {
+  margin-bottom: 16px;
 }
 
 /* Styling for the form used to share a fact */
@@ -90,6 +90,7 @@ h1 {
   padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 100px;
 }
 
 /* Removing list style for ul elements */
@@ -101,50 +102,77 @@ ul {
 /* Styling for the vote buttons associated with each fact */
 .vote-buttons {
   margin-left: auto;
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.vote-buttons button {
+  background-color: #78716c;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+    transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+  background-color: #292524;
 }
 
 .source:link,
 .source:visited {
   color: #a8a29e;
-    text-decoration:none;
-    margin-left: 12px;
-    transition: 1s;
-
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 1s;
 }
 
 .source:hover,
-.source:active{
+.source:active {
   color: #3b82f6;
 }
 
-.btn{
+.btn {
+  border: none;
+  font-family: "Coiny", Arial, serif;
+  color: inherit;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  cursor: pointer;
+  border-radius: 100px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn-all-categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.fact-form input{
+    background-color: #78716c;
     border: none;
-    font-family: "Coiny", Arial, serif;
-    color: inherit;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 17px;
-    padding: 16px 0 13px;
-    background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
-    transition: 0.3s;
-}
-
-.btn:hover{
-    transform: scale(110%)
-    rotate(-2deg);
-}
-
-.btn-large{
-    font-size: 20px;
-    padding: 20px 32px 17px;
-}
-
-.btn-all-categories{
-    margin-bottom: 16px;
-    width: 100%
-}
-
-.btn-category{
-    width: 100%;
-    background-image: none;
+    border-radius: 100px;
+    padding: 16px;
 }
