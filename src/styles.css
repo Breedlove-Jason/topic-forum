@@ -53,52 +53,16 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* Styling for the form used to share a fact */
-.fact-form {
-  background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap; /* Optional: allow wrapping if needed */
-  border-radius: 16px;
-}
-
-/* Only target the first input directly within .fact-form */
-.fact-form > label:first-child input {
-  flex-grow: 1;
-}
-
-.fact-form input::placeholder {
-  color: #fafaf9;
-}
-
-.fact-form span {
-  font-weight: 600;
-  font-size: 18px;
-  margin-right: 18px;
-  display: flex;
-  align-items: center;
-}
-.fact-form-input-wrapper {
-  display: flex;
-  flex-grow: 1;
-  gap: 16px;
-}
-
-.fact-form-input-wrapper input {
-  flex-grow: 1;
-}
-.fact-form input:first-child {
-  flex-grow: 1;
-}
-
 /* Styling for the main content area */
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Styling for each fact */
@@ -113,6 +77,14 @@ h1 {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
 /* Styling for the tag associated with each fact */
@@ -204,6 +176,47 @@ ul {
   background-image: none;
 }
 
+/* Styling for the form used to share a fact */
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap; /* Optional: allow wrapping if needed */
+  border-radius: 16px;
+}
+
+/* Only target the first input directly within .fact-form */
+.fact-form > label:first-child input {
+  flex-grow: 1;
+}
+
+.fact-form input::placeholder {
+  color: #fafaf9;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+}
+.fact-form-input-wrapper {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.fact-form-input-wrapper input {
+  flex-grow: 1;
+}
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
 .fact-form input,
 .fact-form select {
   background-color: #78716c;
@@ -213,4 +226,21 @@ ul {
   color: inherit;
   font-family: inherit;
   font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fact-form input,
+    .fact-form select {
+        width: auto;
+    }
+
+
 }
