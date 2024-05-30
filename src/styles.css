@@ -57,14 +57,48 @@ h1 {
 .fact-form {
   background-color: #44403c;
   margin-bottom: 40px;
-  padding: 16px 24px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap; /* Optional: allow wrapping if needed */
+  border-radius: 16px;
+}
+
+/* Only target the first input directly within .fact-form */
+.fact-form > label:first-child input {
+  flex-grow: 1;
+}
+
+.fact-form input::placeholder {
+  color: #fafaf9;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+}
+.fact-form-input-wrapper {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.fact-form-input-wrapper input {
+  flex-grow: 1;
+}
+.fact-form input:first-child {
+  flex-grow: 1;
 }
 
 /* Styling for the main content area */
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
-  gap: 46px;
+  gap: 48px;
 }
 
 /* Styling for each fact */
@@ -117,7 +151,7 @@ ul {
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .vote-buttons button:hover {
@@ -170,9 +204,13 @@ ul {
   background-image: none;
 }
 
-.fact-form input{
-    background-color: #78716c;
-    border: none;
-    border-radius: 100px;
-    padding: 16px;
+.fact-form input,
+.fact-form select {
+  background-color: #78716c;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
 }

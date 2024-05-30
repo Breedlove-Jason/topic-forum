@@ -29,21 +29,17 @@
 
       <!-- Form for sharing a fact -->
       <form class="fact-form">
-        <label>
+        <div class="fact-form-input-wrapper">
           <input type="text" placeholder="Share a fact with the world..." />
-        </label>
-        <span>200</span>
-        <label>
-          <input type="text" placeholder="Trustworthy source..." />
-        </label>
-        <label>
-          <select>
-            <option value="">Choose category</option>
-            <option value="technology">Technology</option>
-            <option value="science">Science</option>
-            <option value="finance">Finance</option>
-          </select>
-        </label>
+          <span>200</span>
+        </div>
+        <input type="text" placeholder="Trustworthy source..." />
+        <select>
+          <option value="">Choose category</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+        </select>
         <button class="btn btn-large">Post</button>
       </form>
 
@@ -52,9 +48,25 @@
         <!-- Sidebar with category buttons -->
         <aside>
           <ul>
-            <li class="category"><button class="btn btn-all-categories">All</button></li>
-            <li class="category"><button class="btn btn-category" style="background-color: #3b82f6">Technology</button></li>
-            <li class="category"><button class="btn btn-category" style="background-color:#16a34a ">Science</button></li>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
           </ul>
         </aside>
 
@@ -73,12 +85,12 @@
                 >
               </p>
               <span class="tag" style="background-color: #3b82f6"
-                >#technology#</span
+                >technology</span
               >
               <div class="vote-buttons">
-                <button>👍 24 </button>
-                <button>🤯 9 </button>
-                <button>⛔️ 4 </button>
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
               </div>
             </li>
 
@@ -95,13 +107,11 @@
                   >(Source)</a
                 >
               </p>
-              <span class="tag" style="background-color: #eab308"
-                >#society#</span
-              >
+              <span class="tag" style="background-color: #eab308">society</span>
               <div class="vote-buttons">
-                <button>👍 11 </button>
-                <button>🤯 2 </button>
-                <button>⛔️ 0 </button>
+                <button>👍 11</button>
+                <button>🤯 2</button>
+                <button>⛔️ 0</button>
               </div>
             </li>
           </ul>
